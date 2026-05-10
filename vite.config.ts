@@ -1,11 +1,12 @@
 // Vercel deployment config.
-// The @lovable.dev/vite-tanstack-config preset bundles Cloudflare by default
-// (componentTagger, env injection, path aliases, etc.). We override the
-// TanStack Start target to "vercel" so `vite build` outputs the standard
-// Vercel build artifact (.vercel/output) instead of a Worker bundle.
+// The @lovable.dev/vite-tanstack-config preset adds the Cloudflare Vite plugin
+// during builds by default, which produces a Worker bundle instead of Vercel's
+// Build Output API. We disable it and set the TanStack Start target to "vercel"
+// so `vite build` writes to .vercel/output/.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  cloudflare: false,
   tanstackStart: {
     target: "vercel",
     server: { entry: "server" },
