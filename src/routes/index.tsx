@@ -192,7 +192,8 @@ ul{margin:0;padding:0;list-style:none}
 .nav.scrolled{background:rgba(255,255,255,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:var(--ink);box-shadow:var(--shadow-sm)}
 .nav-inner{width:min(1320px,94%);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:var(--space-lg)}
 .brand{display:flex;align-items:center;gap:.65rem;font-family:"Playfair Display",serif;font-weight:700;font-size:1.45rem;letter-spacing:.02em}
-.brand-mark{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:grid;place-items:center;color:var(--ink);font-weight:700;font-family:"Playfair Display",serif}
+.brand-mark{width:38px;height:38px;display:inline-grid;place-items:center;background:transparent;filter:drop-shadow(0 2px 6px rgba(201,162,58,.35))}
+.brand-mark svg{display:block;width:100%;height:100%}
 .nav-links{display:flex;gap:.4rem;align-items:center}
 .nav-link{
   position:relative;padding:.6rem .9rem;font-size:.95rem;font-weight:500;border-radius:6px;
