@@ -8,7 +8,21 @@ const BODY_HTML = `
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="#home" data-link>
-      <span class="brand-mark">H</span>
+      <span class="brand-mark" aria-label="Sabiosita Properties">
+        <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+          <polygon points="50,4 67.6,7.5 83,16.7 93.3,30.9 97.5,47.6 95,64.5 86.6,79.4 73.3,89.8 57.6,95.1 41,94.5 25.5,88.4 12.9,77.4 5.4,62.9 3.6,46.2 9.1,30.1 20.4,17.4 35.2,9 50,4" fill="#ffffff" stroke="#c9a23a" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M50 28 C 38 36, 34 50, 50 74 C 66 50, 62 36, 50 28 Z" fill="url(#sabLeafGrad)" stroke="#8a6a1c" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M50 32 L50 70" stroke="#8a6a1c" stroke-width="1" stroke-linecap="round"/>
+          <path d="M50 44 Q 44 46 41 52 M50 52 Q 56 54 59 60 M50 38 Q 45 40 43 44" stroke="#8a6a1c" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="sabLeafGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f4d27a"/>
+              <stop offset="60%" stop-color="#d4a437"/>
+              <stop offset="100%" stop-color="#a87a1c"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
       <span>SABIOSITA</span>
     </a>
     <div class="nav-links" id="navLinks">
@@ -178,7 +192,8 @@ ul{margin:0;padding:0;list-style:none}
 .nav.scrolled{background:rgba(255,255,255,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:var(--ink);box-shadow:var(--shadow-sm)}
 .nav-inner{width:min(1320px,94%);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:var(--space-lg)}
 .brand{display:flex;align-items:center;gap:.65rem;font-family:"Playfair Display",serif;font-weight:700;font-size:1.45rem;letter-spacing:.02em}
-.brand-mark{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:grid;place-items:center;color:var(--ink);font-weight:700;font-family:"Playfair Display",serif}
+.brand-mark{width:38px;height:38px;display:inline-grid;place-items:center;background:transparent;filter:drop-shadow(0 2px 6px rgba(201,162,58,.35))}
+.brand-mark svg{display:block;width:100%;height:100%}
 .nav-links{display:flex;gap:.4rem;align-items:center}
 .nav-link{
   position:relative;padding:.6rem .9rem;font-size:.95rem;font-weight:500;border-radius:6px;
