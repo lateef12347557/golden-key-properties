@@ -1,28 +1,5 @@
 {
-<<<<<<< HEAD
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "npm install",
   "buildCommand": "npm run build"
-=======
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": ".output/public",
-  "installCommand": "npm install",
-  "framework": null,
-  "functions": {
-    "server/chunks/**/*.mjs": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/_build/(.*)",
-      "dest": "/_build/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server/index.mjs"
-    }
-  ]
->>>>>>> fa6f9161d20c5495457f446cceae18f20fae3a67
 }
