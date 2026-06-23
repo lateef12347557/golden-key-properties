@@ -8,7 +8,21 @@ const BODY_HTML = `
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="#home" data-link>
-      <span class="brand-mark">H</span>
+      <span class="brand-mark" aria-label="Sabiosita Properties">
+        <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+          <polygon points="50,4 67.6,7.5 83,16.7 93.3,30.9 97.5,47.6 95,64.5 86.6,79.4 73.3,89.8 57.6,95.1 41,94.5 25.5,88.4 12.9,77.4 5.4,62.9 3.6,46.2 9.1,30.1 20.4,17.4 35.2,9 50,4" fill="#ffffff" stroke="#c9a23a" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M50 28 C 38 36, 34 50, 50 74 C 66 50, 62 36, 50 28 Z" fill="url(#sabLeafGrad)" stroke="#8a6a1c" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M50 32 L50 70" stroke="#8a6a1c" stroke-width="1" stroke-linecap="round"/>
+          <path d="M50 44 Q 44 46 41 52 M50 52 Q 56 54 59 60 M50 38 Q 45 40 43 44" stroke="#8a6a1c" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="sabLeafGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f4d27a"/>
+              <stop offset="60%" stop-color="#d4a437"/>
+              <stop offset="100%" stop-color="#a87a1c"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
       <span>SABIOSITA</span>
     </a>
     <div class="nav-links" id="navLinks">
