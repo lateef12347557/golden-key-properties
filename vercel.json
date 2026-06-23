@@ -1,6 +1,22 @@
 {
+  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": ".output/public",
   "installCommand": "npm install",
-  "framework": null
+  "framework": null,
+  "functions": {
+    "server/chunks/**/*.mjs": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/_build/(.*)",
+      "dest": "/_build/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server/index.mjs"
+    }
+  ]
 }
