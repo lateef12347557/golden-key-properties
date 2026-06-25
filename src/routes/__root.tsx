@@ -72,14 +72,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Sabiosita Properties" },
+      {
+        name: "description",
+        content:
+          "Sabiosita Properties helps buyers, renters, sellers, and investors find verified real estate opportunities across Nigeria.",
+      },
+      { name: "author", content: "Sabiosita Properties" },
+      { property: "og:title", content: "Sabiosita Properties" },
+      {
+        property: "og:description",
+        content:
+          "Find verified homes, land, rentals, and investment properties with Sabiosita Properties.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@sabiosita" },
     ],
     links: [
       {
