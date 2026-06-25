@@ -10,4 +10,7 @@ export default defineConfig({
     target: "vercel",
     server: { entry: "server" },
   },
+  nitro: {
+    preset: "vercel",
+  },
 });
